@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ActivityPlay">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCards"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/cupcake1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/card_cupcake"
+            app:layout_constraintBottom_toTopOf="@+id/lollipop1"
+            app:layout_constraintEnd_toStartOf="@+id/marhsmallow1"
+            app:layout_constraintStart_toEndOf="@+id/android1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/marhsmallow2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="33dp"
+            android:background="@drawable/card_marshmallow"
+            app:layout_constraintBottom_toTopOf="@+id/pie2"
+            app:layout_constraintEnd_toStartOf="@+id/oreo2"
+            app:layout_constraintStart_toEndOf="@+id/cupcake2"
+            app:layout_constraintTop_toBottomOf="@+id/pie1" />
+
+        <ImageView
+            android:id="@+id/lollipop1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/card_lollipop"
+            app:layout_constraintBottom_toTopOf="@+id/cupcake2"
+            app:layout_constraintEnd_toStartOf="@+id/pie1"
+            app:layout_constraintStart_toEndOf="@+id/jelly1"
+            app:layout_constraintTop_toBottomOf="@+id/cupcake1" />
+
+        <ImageView
+            android:id="@+id/pie2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="88dp"
+            android:background="@drawable/card_pie"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/jen2"
+            app:layout_constraintStart_toEndOf="@+id/lollipop2"
+            app:layout_constraintTop_toBottomOf="@+id/marhsmallow2" />
+
+        <ImageView
+            android:id="@+id/oreo1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/card_oreo"
+            app:layout_constraintBottom_toTopOf="@+id/jen1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/marhsmallow1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/jelly1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/card_jelly"
+            app:layout_constraintBottom_toTopOf="@+id/android2"
+            app:layout_constraintEnd_toStartOf="@+id/lollipop1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/android1" />
+
+        <ImageView
+            android:id="@+id/jen1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/card_jen"
+            app:layout_constraintBottom_toTopOf="@+id/oreo2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pie1"
+            app:layout_constraintTop_toBottomOf="@+id/oreo1" />
+
+        <ImageView
+            android:id="@+id/jen2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="88dp"
+            android:background="@drawable/card_jen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pie2"
+            app:layout_constraintTop_toBottomOf="@+id/oreo2" />
+
+        <ImageView
+            android:id="@+id/pie1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/card_pie"
+            app:layout_constraintBottom_toTopOf="@+id/marhsmallow2"
+            app:layout_constraintEnd_toStartOf="@+id/jen1"
+            app:layout_constraintStart_toEndOf="@+id/lollipop1"
+            app:layout_constraintTop_toBottomOf="@+id/marhsmallow1" />
+
+        <ImageView
+            android:id="@+id/cupcake2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="33dp"
+            android:background="@drawable/card_cupcake"
+            app:layout_constraintBottom_toTopOf="@+id/lollipop2"
+            app:layout_constraintEnd_toStartOf="@+id/marhsmallow2"
+            app:layout_constraintStart_toEndOf="@+id/android2"
+            app:layout_constraintTop_toBottomOf="@+id/lollipop1" />
+
+        <ImageView
+            android:id="@+id/lollipop2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="88dp"
+            android:background="@drawable/card_lollipop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/pie2"
+            app:layout_constraintStart_toEndOf="@+id/jelly2"
+            app:layout_constraintTop_toBottomOf="@+id/cupcake2" />
+
+        <ImageView
+            android:id="@+id/android1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/card_android"
+            app:layout_constraintBottom_toTopOf="@+id/jelly1"
+            app:layout_constraintEnd_toStartOf="@+id/cupcake1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/marhsmallow1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/card_marshmallow"
+            app:layout_constraintBottom_toTopOf="@+id/pie1"
+            app:layout_constraintEnd_toStartOf="@+id/oreo1"
+            app:layout_constraintStart_toEndOf="@+id/cupcake1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/oreo2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="33dp"
+            android:background="@drawable/card_oreo"
+            app:layout_constraintBottom_toTopOf="@+id/jen2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/marhsmallow2"
+            app:layout_constraintTop_toBottomOf="@+id/jen1" />
+
+        <ImageView
+            android:id="@+id/android2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="33dp"
+            android:background="@drawable/card_android"
+            app:layout_constraintBottom_toTopOf="@+id/jelly2"
+            app:layout_constraintEnd_toStartOf="@+id/cupcake2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jelly1" />
+
+        <ImageView
+            android:id="@+id/jelly2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="88dp"
+            android:background="@drawable/card_jelly"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/lollipop2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/android2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCardsHide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/cupcakehide1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/card_back"
+            app:layout_constraintBottom_toTopOf="@+id/lollipophide1"
+            app:layout_constraintEnd_toStartOf="@+id/marhsmallowhide1"
+            app:layout_constraintStart_toEndOf="@+id/androidhide1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/marhsmallowhide2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="33dp"
+            android:background="@drawable/card_back"
+            app:layout_constraintBottom_toTopOf="@+id/piehide2"
+            app:layout_constraintEnd_toStartOf="@+id/oreohide2"
+            app:layout_constraintStart_toEndOf="@+id/cupcakehide2"
+            app:layout_constraintTop_toBottomOf="@+id/piehide1" />
+
+        <ImageView
+            android:id="@+id/lollipophide1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/card_back"
+            app:layout_constraintBottom_toTopOf="@+id/cupcakehide2"
+            app:layout_constraintEnd_toStartOf="@+id/piehide1"
+            app:layout_constraintStart_toEndOf="@+id/jellyhide1"
+            app:layout_constraintTop_toBottomOf="@+id/cupcakehide1" />
+
+        <ImageView
+            android:id="@+id/piehide2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="88dp"
+            android:background="@drawable/card_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/jenhide2"
+            app:layout_constraintStart_toEndOf="@+id/lollipophide2"
+            app:layout_constraintTop_toBottomOf="@+id/marhsmallowhide2" />
+
+        <ImageView
+            android:id="@+id/oreohide1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/card_back"
+            app:layout_constraintBottom_toTopOf="@+id/jenhide1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/marhsmallowhide1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/jellyhide1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/card_back"
+            app:layout_constraintBottom_toTopOf="@+id/androidhide2"
+            app:layout_constraintEnd_toStartOf="@+id/lollipophide1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/androidhide1" />
+
+        <ImageView
+            android:id="@+id/jenhide1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/card_back"
+            app:layout_constraintBottom_toTopOf="@+id/oreohide2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/piehide1"
+            app:layout_constraintTop_toBottomOf="@+id/oreohide1" />
+
+        <ImageView
+            android:id="@+id/jenhide2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="88dp"
+            android:background="@drawable/card_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/piehide2"
+            app:layout_constraintTop_toBottomOf="@+id/oreohide2" />
+
+        <ImageView
+            android:id="@+id/piehide1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/card_back"
+            app:layout_constraintBottom_toTopOf="@+id/marhsmallowhide2"
+            app:layout_constraintEnd_toStartOf="@+id/jenhide1"
+            app:layout_constraintStart_toEndOf="@+id/lollipophide1"
+            app:layout_constraintTop_toBottomOf="@+id/marhsmallowhide1" />
+
+        <ImageView
+            android:id="@+id/cupcakehide2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="33dp"
+            android:background="@drawable/card_back"
+            app:layout_constraintBottom_toTopOf="@+id/lollipophide2"
+            app:layout_constraintEnd_toStartOf="@+id/marhsmallowhide2"
+            app:layout_constraintStart_toEndOf="@+id/androidhide2"
+            app:layout_constraintTop_toBottomOf="@+id/lollipophide1" />
+
+        <ImageView
+            android:id="@+id/lollipophide2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="88dp"
+            android:background="@drawable/card_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/piehide2"
+            app:layout_constraintStart_toEndOf="@+id/jellyhide2"
+            app:layout_constraintTop_toBottomOf="@+id/cupcakehide2" />
+
+        <ImageView
+            android:id="@+id/androidhide1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/card_back"
+            app:layout_constraintBottom_toTopOf="@+id/jellyhide1"
+            app:layout_constraintEnd_toStartOf="@+id/cupcakehide1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/marhsmallowhide1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/card_back"
+            app:layout_constraintBottom_toTopOf="@+id/piehide1"
+            app:layout_constraintEnd_toStartOf="@+id/oreohide1"
+            app:layout_constraintStart_toEndOf="@+id/cupcakehide1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/oreohide2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="33dp"
+            android:background="@drawable/card_back"
+            app:layout_constraintBottom_toTopOf="@+id/jenhide2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/marhsmallowhide2"
+            app:layout_constraintTop_toBottomOf="@+id/jenhide1" />
+
+        <ImageView
+            android:id="@+id/androidhide2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="33dp"
+            android:background="@drawable/card_back"
+            app:layout_constraintBottom_toTopOf="@+id/jellyhide2"
+            app:layout_constraintEnd_toStartOf="@+id/cupcakehide2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jellyhide1" />
+
+        <ImageView
+            android:id="@+id/jellyhide2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="88dp"
+            android:background="@drawable/card_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/lollipophide2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/androidhide2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
